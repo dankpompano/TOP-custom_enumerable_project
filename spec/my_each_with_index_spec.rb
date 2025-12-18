@@ -27,7 +27,6 @@ RSpec.describe Enumerable do
         enumerable.each_with_index do |element, index|
           each_with_index_results << [element * 2, index * 2]
         end
-
         expect(my_each_with_index_results).to eq(each_with_index_results)
       end
     end
